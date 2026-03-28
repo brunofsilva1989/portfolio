@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 * Start Bootstrap - Freelancer v7.0.0 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2021 Start Bootstrap
@@ -564,7 +564,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "â€”Â ";
 }
 
 .img-fluid {
@@ -11053,4 +11053,170 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+/* Custom theme overrides */
+:root {
+  --bs-blue: #1d4ed8;
+  --bs-green: #10b981;
+  --bs-teal: #3b82f6;
+  --bs-white: #ffffff;
+  --bs-gray: #6b7280;
+  --bs-gray-dark: #111827;
+  --bs-primary: #1d4ed8;
+  --bs-secondary: #1e3a8a;
+  --bs-success: #10b981;
+  --bs-light: #f9fafb;
+  --bs-dark: #111827;
+}
+
+body {
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+a {
+  color: #3b82f6;
+}
+
+a:hover {
+  color: #1e3a8a;
+}
+
+.text-secondary {
+  color: #1e3a8a !important;
+}
+
+.text-muted {
+  color: #6b7280 !important;
+}
+
+.bg-primary {
+  background-color: #1d4ed8 !important;
+}
+
+.bg-secondary {
+  background-color: #1e3a8a !important;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 0.25rem rgba(29, 78, 216, 0.25);
+}
+
+.btn-check:checked + .btn-primary,
+.btn-check:active + .btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.divider-custom .divider-custom-line {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #1e3a8a;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #dbeafe;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #ffffff;
+    background: #3b82f6;
+  }
+}
+
+.masthead {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 55%, #3b82f6 100%);
+}
+
+.portfolio {
+  background-color: #f9fafb;
+}
+
+.portfolio .portfolio-item {
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px rgba(30, 58, 138, 0.12);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: rgba(29, 78, 216, 0.86);
+}
+
+.portfolio-modal .btn-close {
+  color: #1d4ed8;
+}
+
+.about-section {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.about-section .lead {
+  color: #111827;
+}
+
+.about-section .container {
+  background: linear-gradient(180deg, #ffffff 0%, #dbeafe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 20px 45px rgba(29, 78, 216, 0.08);
+}
+
+.form-control {
+  border: 1px solid #dbeafe;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.18);
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.copyright {
+  background-color: #111827;
+}
+
+
+.footer .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
